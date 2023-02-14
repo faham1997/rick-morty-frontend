@@ -7,14 +7,15 @@ export const getApi = async (action) => {
     return {
       isSucess: true,
       status: response.status,
-      data: response.data.data,
+      data: response.data,
     };
   } catch (error) {
     return {
       isSuccess: false,
       status: error.response?.status,
-      data: error.response?.data?.data,
-      message: error.response?.data?.message,
+      data: error.response?.data,
     };
   }
 };
+
+export default getApi;

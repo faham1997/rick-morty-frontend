@@ -1,3 +1,5 @@
-export const config = {
+const config = {
   serverURL: "https://rickandmortyapi.com/api",
 };
+
+export default config;
