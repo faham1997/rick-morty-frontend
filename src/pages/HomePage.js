@@ -19,11 +19,11 @@ function HomePage() {
       <div className="font-bold text-2xl text-center pb-5 pt-2 text-white">
         Characters{" "}
       </div>
-      <div className="grid grid-cols-4 gap-2 ">
+      <div className="px-10 grid grid-cols-2 gap-5 md:grid-cols-4 overflow">
         {datas.length > 0 ? (
           datas.map((data) => <CharacterList key={data.id} data={data} />)
         ) : (
-          <>No data found</>
+          <>No characters found!!</>
         )}
       </div>
     </div>
